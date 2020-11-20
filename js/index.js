@@ -1,4 +1,4 @@
 window.onload = () => {
-    $("#header").load("./layouts/navigation-bar.html"); 
+    $("#navigation-bar").load("./layouts/navigation-bar.html"); 
     $("#footer").load("./layouts/footer.html");
 }
