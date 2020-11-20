@@ -1,12 +1,16 @@
 #navigation-bar {
-    position: fixed;
+    position: absolute;
     display: flex;
     width: 100%;
-    height: 100px;
+    height: 120px;
     top: 0;
-    border-bottom: 1px solid black;
     justify-content: center;
     align-items: center;
+    background: rgb(255,255,255);
+    /*
+    background: linear-gradient(180deg, rgba(255,255,255,1) 90%, rgba(255,255,255,0) 100%);
+    */
+    float: left;
 }
 
 #navigation-bar > .tab-buttons-wrapper {
@@ -19,10 +23,12 @@
 #navigation-bar > .tab-buttons-wrapper > input {
     border: 0px;
     background-color: transparent;
-    width: 15%;
+    width: 30%;
     height: 150%;
 
-    font-size: 20px;
+    font-size: 2.5em;
+    transition: 0.3s;
+    border-bottom: 1px transparent;
 }
 
 #navigation-bar > .tab-buttons-wrapper > input:hover {
