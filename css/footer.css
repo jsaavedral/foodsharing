@@ -1,8 +1,48 @@
 :root {
-    --footer-height: 200px
+    --footer-height: 200px;
+}
+
+#footer {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    bottom: 0px;
+    left: 0;
+    height: var(--footer-height);
+    background-color: rgb(165, 165, 165);
+    width: 100%;
+    float: left;
 }
 
 .footer-wrapper {
-    height: var(--footer-height);
-    background-color: rgb(165, 165, 165);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 20%;
+}
+
+.footer-wrapper > input {
+    background-color: transparent;
+    border: 0px transparent;
+    width: 50px;
+    height: 50px;
+}
+
+.footer-wrapper > #facebook {
+    background: url("../images/fb_logo.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.footer-wrapper > #instagram {
+    background: url("../images/ig_logo.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.footer-wrapper > #twitter {
+    background: url("../images/tw_logo.png");
+    background-repeat: no-repeat;
+    background-size: contain;
 }
