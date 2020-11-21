@@ -36,3 +36,7 @@ body {
     left: calc(50% - (var(--welcome-logo-width) / 2));
     top: 30%;
 }
+
+.quick-info-wrapper {
+    height: calc(100vh - var(--footer-height));
+}
