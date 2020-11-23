@@ -1,0 +1,14 @@
+body {
+    margin: 0px;
+    padding: 0px;
+}
+
+.site-wrapper {
+    display: block;
+    overflow: auto;
+}
+
+.location-info-wrapper {
+    width: 100%;
+    margin-top: var(--nav-bar-height);
+}

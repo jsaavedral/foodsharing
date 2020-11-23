@@ -6,3 +6,11 @@ document.getElementById("about").addEventListener("click", () => {
     //window.location.replace("./index.html");
     window.location.href = "about.html";
 });
+document.getElementById("locations").addEventListener("click", () => {
+    //window.location.replace("./index.html");
+    window.location.href = "locations.html";
+});
+document.getElementById("gallery").addEventListener("click", () => {
+    //window.location.replace("./index.html");
+    window.location.href = "gallery.html";
+});
