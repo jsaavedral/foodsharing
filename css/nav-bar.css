@@ -37,6 +37,6 @@
 }
 
 #navigation-bar > .tab-buttons-wrapper > input:hover {
-    color: green;
-    border-bottom: 1px solid green;
+    color: gray;
+    border-bottom: 1px solid gray;
 }
