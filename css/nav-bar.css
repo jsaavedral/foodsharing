@@ -31,7 +31,7 @@
     width: 30%;
     height: 150%;
 
-    font-size: 2vmax;
+    font-size: 3vmin;
     transition: 0.3s;
     border-bottom: 1px transparent;
 }
