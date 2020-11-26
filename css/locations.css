@@ -1,3 +1,7 @@
+:root {
+    --location-selector-bar-height: calc(var(--nav-bar-height) * 0.7);
+}
+
 body {
     margin: 0px;
     padding: 0px;
@@ -11,4 +15,83 @@ body {
 .location-info-wrapper {
     width: 100%;
     margin-top: var(--nav-bar-height);
+    height: calc(100vh - var(--nav-bar-height));
+}
+
+.location-selector-bar {
+    position: relative;
+    top: 0;
+    left: 0;
+    height: var(--location-selector-bar-height);
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    float: left;
+    border-top: 1px solid gray;
+}
+
+.location-selector-bar > .location-buttons {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 50%;
+}
+
+.location-selector-bar > .location-buttons > input {
+    border: 0px;
+    background-color: transparent;
+    width: 30%;
+    height: 150%;
+
+    font-size: 2.2vmin;
+    transition: 0.3s;
+    border-bottom: 1px transparent;
+}
+
+.location-selector-bar > .location-buttons > input:hover {
+    color: gray;
+    border-bottom: 1px solid gray;
+}
+
+.locations-info-content {
+    display: grid;
+    width: 100%;
+    grid-template-columns: 50% 50%;
+    height: calc(100% - var(--location-selector-bar-height));
+}
+
+.google-maps-view, .additional-information-view {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+}
+
+.google-maps-view > iframe {
+    /*scrolling="no" marginheight="0" marginwidth="0"
+    width="100%" height="600" frameborder="0"
+    */
+    width: 90%;
+    height: 90%;
+    border: 2px solid gray;
+}
+
+#food-closet-img {
+    height: auto;
+}
+
+.location-image {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+    float: left;
+}
+
+.location-info{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
 }
