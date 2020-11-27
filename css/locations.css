@@ -103,3 +103,37 @@ body {
     text-align: center;
     font-size: 3vmin;
 }
+
+.kasutusreeglid {
+    display: ;
+   
+}
+
+.kasutusreeglid-wrapper {
+    background-color: gainsboro;
+    width: 60%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border: black 5px;
+    padding: 10px 50px;
+    margin-bottom: 30px;
+}
+
+.kasutusreeglid-content {
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.kasutusreeglid-content h2 {
+    font-family: 'Anton', sans-serif;
+    font-size: 50px;
+    text-align: center;
+}
+
+.kasutusreeglid-content p {
+    font-family: 'Anton', sans-serif;
+    font-size: 30px;
+    margin-bottom: 20px;
+    text-align: center;
+}
