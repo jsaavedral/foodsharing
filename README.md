@@ -15,6 +15,7 @@ Sander:
 *lõi jaluse ja päise
 *lisas pealehele banneri
 *arendas vahelehe 'Asukohad' layouti
+*lisas veebilhe kodu.ut.ee lehele
 
 
 Annaliis:
