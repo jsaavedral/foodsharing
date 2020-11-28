@@ -34,6 +34,7 @@
     font-size: 3vmin;
     transition: 0.3s;
     border-bottom: 1px transparent;
+    font-family: 'Anton', sans-serif;
 }
 
 #navigation-bar > .tab-buttons-wrapper > input:hover {
