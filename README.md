@@ -1,26 +1,28 @@
 # FoodSharing
 
-1. Kirjeldus:
+## Kirjeldus
+
 Meie veebileht tutvustab ühte loodussäästlikku liikumist arendavat organisatsiooni nimega Foodsharing Tartu.
 
-2. Tiimiliikmed:
-Lehte arendasid Sander Möller ja Annaliis Täheväli.
+## Tiimiliikmed
 
+- Sander Möller
+- Annaliis Täheväli
 
-3. Tööjaotus:
-Tööd jagunesid enam-vähem nii..
+## Tööjaotus
 
-Sander:
-*lõi vahelehed
-*lõi jaluse ja päise
-*lisas pealehele banneri
-*arendas vahelehe 'Asukohad' layouti
-*lisas veebilehe kodu.ut.ee lehele
+### Sander
 
+- lõi vahelehed
+- lõi jaluse ja päise
+- lisas pealehele banneri
+- arendas vahelehe 'Asukohad' layouti
+- lisas veebilehe kodu.ut.ee lehele
 
-Annaliis:
-*lisas veebilehe sisu (pildid, teksti)
-*lõi galerii
-*täiendas pealehte fakti plokiga
-*täiendas 'Asukohad' vahelehte kasutusreeglite ploki
-*kontrollis HTML ja CSS erroreid
+### Annaliis
+
+- lisas veebilehe sisu (pildid, teksti)
+- lõi galerii
+- täiendas pealehte fakti plokiga
+- täiendas 'Asukohad' vahelehte kasutusreeglite ploki
+- kontrollis HTML ja CSS erroreid
