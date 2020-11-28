@@ -53,6 +53,10 @@ body {
     margin-bottom: 50px;
 }
 
+.information-tabs:hover {
+    background: #4a4e53;
+}
+
 .information-tabs-top-spacing {
     font-family: SourceSansPro,sans-serif;
     font-weight: 500;
