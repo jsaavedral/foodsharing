@@ -1,3 +1,6 @@
+// Määrab navigeerimisribal olevatele nuppudele funktsionaalsuse
+// Iga nupp vajutuse korral navigeerib akna vaate oma vahelehele
+
 document.getElementById("index").addEventListener("click", () => {
     //window.location.replace("./index.html");
     window.location.href = "index.html";

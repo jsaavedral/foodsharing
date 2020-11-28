@@ -19,22 +19,25 @@ var locationInfo = {
     ],
 };
 
-
-
-/* https://www.maps.ie/create-google-map/ */
-
+// Lisab lehele navigeerimisriba ja jaluse
 $("#navigation-bar").load("./layouts/navigation-bar.html");
 $("#footer").load("./layouts/footer.html");
 
+// Leiab kõik asukohtade navigeerimise nupud klassi nime järgi
 let locationSelectionButtons = document.getElementsByClassName(
     "location-select-button"
 );
 
 for (let index = 0; index < Object.keys(locationInfo).length; index++) {
+    // Leiab iteratsiooni numbri järgi vastava nupu
     let button = locationSelectionButtons[index];
+    // Leiab iteratsiooni numbri järgi vastavad andmed
     let locationData = locationInfo[Object.keys(locationInfo)[index]];
+
+    // Määrab nupule nupu teksti väärtuse
     button.value = locationData[0];
 
+    // Funktsioon määrab lehe elementidele vastavad väärtused
     function addLocationContent() {
         document.getElementsByClassName("location-info")[0].innerHTML =
             locationData[1];
@@ -44,10 +47,13 @@ for (let index = 0; index < Object.keys(locationInfo).length; index++) {
             </iframe>`;
     }
 
+    // Määrab lehele esialgse info
     if (index == 0) {
         addLocationContent();
     }
-    
+
+    // Määrab asukoha nuppudele funktsionaalsuse
+    // Leht kuvab vastavat infot olenevalt millise asukoha valiti
     button.addEventListener("click", () => {
         addLocationContent();
     });
