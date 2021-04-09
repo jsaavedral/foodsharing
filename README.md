@@ -8,6 +8,7 @@ Meie veebileht tutvustab ühte loodussäästlikku liikumist arendavat organisats
 
 - Sander Möller
 - Annaliis Täheväli
+- Ketlin Hiob
 
 ## Tööjaotus
 
