@@ -128,7 +128,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 #header.header-scrolled {
-  border-color: #533a20;
+  border-color: #f1e7c9;
   box-shadow: 0px 2px 15px rgba(18, 66, 101, 0.08);
 }
 
@@ -197,6 +197,7 @@ h1, h2, h3, h4, h5, h6 {
  
 .navbar a:hover, .navbar .active, .navbar li:hover > a {
   color: #533a20; 
+  font-weight: bold;
 }
 
 .navbar .getstarted {
@@ -277,7 +278,7 @@ h1, h2, h3, h4, h5, h6 {
 * Mobile Navigation 
 */
 .mobile-nav-toggle {
-  color: #124265;
+  color: #5e5e5e;
   font-size: 28px;
   cursor: pointer;
   display: none;
@@ -305,7 +306,7 @@ h1, h2, h3, h4, h5, h6 {
   right: 0;
   left: 0;
   bottom: 0;
-  background: rgba(10, 38, 58, 0.9);
+  background: rgba(226, 226, 226, 0.9);
   transition: 0.3s;
   z-index: 999;
 }
@@ -324,7 +325,7 @@ h1, h2, h3, h4, h5, h6 {
   bottom: 15px;
   left: 15px;
   padding: 10px 0;
-  background-color: #533a20;
+  background-color: #f1e7c9;
   overflow-y: auto;
   transition: 0.3s;
 }
@@ -332,11 +333,11 @@ h1, h2, h3, h4, h5, h6 {
 .navbar-mobile a {
   padding: 10px 20px;
   font-size: 15px;
-  color: #124265;
+  color: #533a20;
 }
 
 .navbar-mobile a:hover, .navbar-mobile .active, .navbar-mobile li:hover > a {
-  color: #f1e7c9;
+  color: #533a20;
 }
 
 .navbar-mobile .getstarted {
@@ -351,7 +352,7 @@ h1, h2, h3, h4, h5, h6 {
   z-index: 99;
   opacity: 1;
   visibility: visible;
-  background: #533a20;
+  background: #f1e7c9;
   box-shadow: 0px 0px 30px rgba(127, 137, 161, 0.25);
 }
 
@@ -455,7 +456,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 #main .icon-box .title a {
-  color: #124265;
+  color: #5e5e5e;
   transition: 0.3s;
 }
 
@@ -636,8 +637,13 @@ section {
 /*--------------------------------------------------------------
 # Portfolio
 --------------------------------------------------------------*/
+.portfolio .row>* { 
+    padding-right: calc(var(--bs-gutter-x)/ 6); 
+    padding-left: calc(var(--bs-gutter-x)/ 6);  
+}
 .portfolio .portfolio-item {
-  margin-bottom: 30px;
+  margin-top: calc(var(--bs-gutter-x)/ 6);  
+   margin-bottom: calc(var(--bs-gutter-x)/ 6);  
 }
 
 .portfolio #portfolio-flters {
@@ -898,7 +904,7 @@ section {
 #footer .footer-top h4 {
   font-size: 16px;
   font-weight: bold;
-  color: #124265;
+  color: #5e5e5e;
   position: relative;
   padding-bottom: 12px;
 }
