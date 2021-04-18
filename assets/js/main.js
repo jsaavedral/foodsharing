@@ -171,7 +171,7 @@
   window.addEventListener('load', () => {
     let portfolioContainer = select('.portfolio-container'); 
     let portfolioIsotope = new Isotope(portfolioContainer, {
-      itemSelector: '.portfolio-item'
+      itemSelector: '.row'
     });
 
    
