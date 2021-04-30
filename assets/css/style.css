@@ -674,7 +674,7 @@ section {
 }
 
 .portfolio #portfolio-flters li:hover, .portfolio #portfolio-flters li.filter-active {
-  color: #f1e7c9;
+  font-weight: 800;
 }
 
 .portfolio #portfolio-flters li:last-child {
@@ -797,7 +797,13 @@ section {
   bottom: 15px;
   right: 15px;
 }
- 
+
+@media (max-width: 480px) {
+  .portfolio .row {
+    margin-left: 0;
+  }
+}
+
 /*--------------------------------------------------------------
 # Frequently Asked Questions
 --------------------------------------------------------------*/
