@@ -381,7 +381,7 @@ h1, h2, h3, h4, h5, h6 {
 --------------------------------------------------------------*/
 #main {
   color: white;
-  background-image: url("assets/img/portfolio/7.JPG");
+  background-image: url("/assets/img/portfolio/7.JPG");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -408,10 +408,11 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: 700;
   line-height: 72px;
   font-family: "Poppins", sans-serif;
+  color: #64AE24;
 }
 
 #main h2 {
-  color: #5e5e5e;
+  color: #533A20;
   margin: 10px 0 0 0;
   font-size: 22px;
 }
@@ -537,6 +538,7 @@ section {
   font-weight: bold;
   text-transform: uppercase;
   margin-bottom: 20px;
+  color: #64AE24;
   padding-bottom: 0;
 }
 
