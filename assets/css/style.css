@@ -623,7 +623,7 @@ section {
   line-height: 48px;
   display: block;
   font-weight: 700;
-  color: #533a20  ;
+  color: #64AE24;
   margin-left: 80px;
   margin: auto;
 }
@@ -634,6 +634,12 @@ section {
   font-weight: 600;
   font-size: 14px;
   color: #533a20;
+}
+
+.counts .fas {
+    padding: 18px;
+    font-size: 40px;
+    color: #64AE24;
 }
 
 /*--------------------------------------------------------------
