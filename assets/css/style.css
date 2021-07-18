@@ -404,7 +404,7 @@ h1, h2, h3, h4, h5, h6 {
 
 #main h1 {
   margin: 0;
-  font-size: 50px;
+  font-size: 45px;
   font-weight: 700;
   line-height: 72px;
   font-family: "Poppins", sans-serif;
@@ -525,8 +525,6 @@ section {
 .section-bg-alt {
   background-color: #f1e7c9;
 }
-
-
 
 .section-title {
   text-align: center;
