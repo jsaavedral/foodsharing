@@ -404,7 +404,7 @@ h1, h2, h3, h4, h5, h6 {
 
 #main h1 {
   margin: 0;
-  font-size: 50px;
+  font-size: 45px;
   font-weight: 700;
   line-height: 72px;
   font-family: "Poppins", sans-serif;
@@ -526,11 +526,9 @@ section {
   background-color: #f1e7c9;
 }
 
-
-
 .section-title {
   text-align: center;
-  padding-bottom: 30px;
+  padding-bottom: 40px;
 }
 
 .section-title h2 {
@@ -538,9 +536,22 @@ section {
   font-weight: bold;
   text-transform: uppercase;
   margin-bottom: 20px;
-  color: #64AE24;
+  color: #533a20;
   padding-bottom: 0;
 }
+
+.section-title h2::after {
+    content: '';
+    position: absolute;
+    display: block;
+    width: 50px;
+    height: 3px;
+    background: #64AE24;
+    top: 50px;
+    left: calc(50% - 25px);
+}
+
+
 
 .section-title p {
   margin-bottom: 0;
