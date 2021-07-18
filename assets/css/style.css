@@ -690,10 +690,13 @@ section {
   color: #444444;
   margin-bottom: 5px;
   transition: all 0.3s ease-in-out;
+  border-radius: 4px;
 }
 
 .portfolio #portfolio-flters li:hover, .portfolio #portfolio-flters li.filter-active {
   font-weight: 800;
+  background: #64AE24;
+  color: #fff;
 }
 
 .portfolio #portfolio-flters li:last-child {
