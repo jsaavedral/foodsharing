@@ -34,7 +34,7 @@
   }
 
   /**
-   * Easy on scroll event listener 
+   * Easy on scroll event listener
    */
   const onscroll = (el, listener) => {
     el.addEventListener('scroll', listener)
@@ -164,20 +164,20 @@
     });
   }
 
- 
+
   /**
    * Porfolio isotope and filter
    */
   window.addEventListener('load', () => {
-    let portfolioContainer = select('.portfolio-container'); 
+    let portfolioContainer = select('.portfolio-container');
     let portfolioIsotope = new Isotope(portfolioContainer, {
-      itemSelector: '.row'
+      itemSelector: '.filter-card'
     });
 
-   
+
 
     let portfolioFilters = select('#portfolio-flters li', true);
-   
+
     on('click', '#portfolio-flters li', function(e) {
       e.preventDefault();
       portfolioFilters.forEach(function(el) {
@@ -196,13 +196,13 @@
   });
 
   /**
-   * Initiate portfolio lightbox 
+   * Initiate portfolio lightbox
    */
   const portfolioLightbox = GLightbox({
     selector: '.portfolio-lightbox'
   });
 
- 
+
   /**
    * Animation on scroll
    */
