@@ -693,15 +693,12 @@ section {
   border-radius: 4px;
 }
 
-.portfolio #portfolio-flters li:hover, .portfolio #portfolio-flters li.filter-active {
-  font-weight: 800;
-  background: #64AE24;
-  color: #fff;
-}
 
 .portfolio #portfolio-flters li:last-child {
   margin-right: 0;
 }
+
+
 
 .portfolio .portfolio-wrap {
   transition: 0.3s;
@@ -709,6 +706,7 @@ section {
   overflow: hidden;
   z-index: 1;
 }
+
 
 .portfolio .portfolio-wrap::before {
   content: "";
@@ -829,6 +827,7 @@ section {
 /*--------------------------------------------------------------
 # Frequently Asked Questions
 --------------------------------------------------------------*/
+
 .faq .faq-list {
   padding: 0 100px;
 }
@@ -1054,4 +1053,13 @@ section {
   background: #533a20;
   color: #fff;
   text-decoration: none;
+}
+
+.card {
+  flex-direction: row;
+}
+
+.card img {
+  width: 200px;
+  height: 300px;
 }
