@@ -1055,8 +1055,10 @@ section {
   text-decoration: none;
 }
 
-.card {
+@media (min-width: 688px) {
+  .card {
   flex-direction: row;
+  }
 }
 
 .card img {
