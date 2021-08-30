@@ -10,16 +10,16 @@
 --------------------------------------------------------------*/
 body {
   font-family: "Open Sans", sans-serif;
-  color: #444444;
+  color: #533a20;
 }
 
 a {
-  color: #f1e7c9;
+  color: #64AE24;
   text-decoration: none;
 }
 
 a:hover {
-  color: #469fdf;
+  color: #533a20;
   text-decoration: none;
 }
 
@@ -380,8 +380,7 @@ h1, h2, h3, h4, h5, h6 {
 # Hero Section
 --------------------------------------------------------------*/
 #main {
-  color: white;
-  background-image: url("/assets/img/portfolio/7.JPG");
+  color: #f1e7c9;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -390,7 +389,7 @@ h1, h2, h3, h4, h5, h6 {
 
 #main:before {
   content: "";
-  background: rgba(255, 255, 255, 0.8);
+  background: #f1e7c9;
   position: absolute;
   bottom: 0;
   top: 0;
@@ -532,12 +531,13 @@ section {
 }
 
 .section-title h2 {
-  font-size: 32px;
+  font-size: 36px;
   font-weight: bold;
   text-transform: uppercase;
   margin-bottom: 20px;
-  color: #533a20;
+  color: #64AE24;
   padding-bottom: 0;
+  font-family: "Alfa Slab One", serif;
 }
 
 .section-title h2::after {
@@ -591,7 +591,7 @@ section {
 }
 
 .about .content p:last-child {
-  margin-bottom: 0;
+  margin-bottom: 10px;
 }
 
 .about .content .btn-learn-more {
@@ -687,18 +687,19 @@ section {
   font-weight: 600;
   line-height: 1;
   text-transform: uppercase;
-  color: #444444;
+  color: #64AE24;
   margin-bottom: 5px;
   transition: all 0.3s ease-in-out;
   border-radius: 4px;
 }
 
+.portfolio #portfolio-flters .filter-active {
+  color: #533A20;
+}
 
 .portfolio #portfolio-flters li:last-child {
   margin-right: 0;
 }
-
-
 
 .portfolio .portfolio-wrap {
   transition: 0.3s;
@@ -821,6 +822,12 @@ section {
 @media (max-width: 480px) {
   .portfolio .row {
     margin-left: 0;
+  }
+}
+
+@media (min-width: 1400px) {
+  .portfolio .container {
+    max-width: 970px;
   }
 }
 
@@ -1057,10 +1064,15 @@ section {
 
 @media (min-width: 688px) {
   .card {
-  flex-direction: row;
+    flex-direction: row;
+    padding: unset;
   }
 }
 
+.card {
+  border: 0;
+  margin-top: 20px;
+}
 .card img {
   width: 200px;
   height: 300px;
