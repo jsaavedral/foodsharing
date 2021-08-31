@@ -27,6 +27,7 @@ h1, h2, h3, h4, h5, h6 {
   font-family: "Raleway", sans-serif;
 }
 
+
 /*--------------------------------------------------------------
 # Back to top button
 --------------------------------------------------------------*/
@@ -113,6 +114,9 @@ h1, h2, h3, h4, h5, h6 {
 @media screen and (max-width: 768px) {
   [data-aos-delay] {
     transition-delay: 0 !important;
+  }
+  .nav-contact-info {
+    display: none;
   }
 }
 
@@ -397,10 +401,6 @@ h1, h2, h3, h4, h5, h6 {
   right: 0;
 }
 
-#main .container {
-  padding-top: 80px;
-}
-
 #main h1 {
   margin: 0;
   font-size: 45px;
@@ -484,22 +484,20 @@ h1, h2, h3, h4, h5, h6 {
   color: #f1e7c9;
 }
 
-@media (min-width: 1024px) {
+@media (max-width: 468px) {
   #main {
-    background-attachment: fixed;
+   height: auto;
   }
 }
 
-@media (max-height: 800px) {
-  #main {
-    height: auto;
-  }
+@media (min-width: 768px)
+#main .first-column {
+    padding-top: 6rem!important;
 }
+
+
 
 @media (max-width: 992px) {
-  #main {
-    height: auto;
-  }
   #main h1 {
     font-size: 28px;
     line-height: 36px;
@@ -507,6 +505,46 @@ h1, h2, h3, h4, h5, h6 {
   #main h2 {
     font-size: 18px;
     line-height: 24px;
+  }
+  #main .second-column {
+    padding-top: 40px;
+}
+}
+
+@media (min-width: 1024px) {
+  #main {
+    background-attachment: fixed;
+  }
+  #main h1 {
+    font-size: 40px;
+    line-height: 40px;
+  }
+  #main h2 {
+    font-size: 18px;
+  }
+
+  #main .first-column {
+      padding-top: 30px;
+  }
+}
+
+@media (min-width: 1200px) {
+  #main {
+    background-attachment: fixed;
+  }
+  #main {
+    height: auto;
+  }
+  #main .container {
+    padding-top: 80px;
+}
+  #main h1 {
+    font-size: 45px;
+    line-height: 50px;
+  }
+  #main h2 {
+    font-size: 22px;
+    margin: 30px 0 0 0;
   }
 }
 
@@ -1062,18 +1100,35 @@ section {
   text-decoration: none;
 }
 
-@media (min-width: 688px) {
-  .card {
-    flex-direction: row;
-    padding: unset;
-  }
+/*--------------------------------------------------------------
+# Locations
+--------------------------------------------------------------*/
+
+.btn-outline-success {
+    color: #fff;
+    background-color: #64AE24;
+    margin: 1px;
+}
+
+.btn-outline-success:hover {
+    color: #fff;
+    background-color: #533a20;
 }
 
 .card {
   border: 0;
   margin-top: 20px;
+  padding-top: 20px;
 }
+
 .card img {
   width: 200px;
   height: 300px;
+}
+
+@media (min-width: 688px) {
+  .card {
+    flex-direction: row;
+    padding: unset;
+  }
 }
