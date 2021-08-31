@@ -10,22 +10,23 @@
 --------------------------------------------------------------*/
 body {
   font-family: "Open Sans", sans-serif;
-  color: #444444;
+  color: #533a20;
 }
 
 a {
-  color: #f1e7c9;
+  color: #64AE24;
   text-decoration: none;
 }
 
 a:hover {
-  color: #469fdf;
+  color: #533a20;
   text-decoration: none;
 }
 
 h1, h2, h3, h4, h5, h6 {
   font-family: "Raleway", sans-serif;
 }
+
 
 /*--------------------------------------------------------------
 # Back to top button
@@ -114,6 +115,9 @@ h1, h2, h3, h4, h5, h6 {
   [data-aos-delay] {
     transition-delay: 0 !important;
   }
+  .nav-contact-info {
+    display: none;
+  }
 }
 
 /*--------------------------------------------------------------
@@ -124,7 +128,7 @@ h1, h2, h3, h4, h5, h6 {
   background: #f1e7c9;
   z-index: 997;
   padding: 15px 0;
- 
+
 }
 
 #header.header-scrolled {
@@ -160,7 +164,7 @@ h1, h2, h3, h4, h5, h6 {
 # Navigation Menu
 --------------------------------------------------------------*/
 /**
-* Desktop Navigation 
+* Desktop Navigation
 */
 .navbar {
   padding: 0;
@@ -188,15 +192,15 @@ h1, h2, h3, h4, h5, h6 {
   white-space: nowrap;
   transition: 0.3s;
 }
- 
+
 .navbar a i {
   font-size: 12px;
   line-height: 0;
   margin-left: 5px;
 }
- 
+
 .navbar a:hover, .navbar .active, .navbar li:hover > a {
-  color: #533a20; 
+  color: #533a20;
   font-weight: bold;
 }
 
@@ -210,7 +214,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .navbar .getstarted:hover {
   color: #533a20;
-  background: #3194db;
+  background: #fff;
 }
 
 .navbar .dropdown ul {
@@ -223,7 +227,7 @@ h1, h2, h3, h4, h5, h6 {
   z-index: 99;
   opacity: 0;
   visibility: hidden;
-  background: #533a20;
+  background: #f1e7c9;
   box-shadow: 0px 0px 30px rgba(127, 137, 161, 0.25);
   transition: 0.3s;
   border-radius: 4px;
@@ -275,10 +279,10 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 /**
-* Mobile Navigation 
+* Mobile Navigation
 */
 .mobile-nav-toggle {
-  color: #5e5e5e;
+  color: #533a20;
   font-size: 28px;
   cursor: pointer;
   display: none;
@@ -331,9 +335,10 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .navbar-mobile a {
-  padding: 10px 20px;
-  font-size: 15px;
-  color: #533a20;
+  font-size: 20px;
+  font-weight: 900;
+  color: #64AE24;
+     padding: 10px 20px;
 }
 
 .navbar-mobile a:hover, .navbar-mobile .active, .navbar-mobile li:hover > a {
@@ -380,17 +385,16 @@ h1, h2, h3, h4, h5, h6 {
 # Hero Section
 --------------------------------------------------------------*/
 #main {
-  width: 100%;
-  height: 100vh;
-  position: relative;
-  background: url("../img/main_tab_bg.jpg") top center;
+  color: #f1e7c9;
+  background-position: center;
+  background-repeat: no-repeat;
   background-size: cover;
-  position: relative;
+  height: 100vh;
 }
 
 #main:before {
   content: "";
-  background: rgba(255, 255, 255, 0.8);
+  background: #f1e7c9;
   position: absolute;
   bottom: 0;
   top: 0;
@@ -398,20 +402,17 @@ h1, h2, h3, h4, h5, h6 {
   right: 0;
 }
 
-#main .container {
-  padding-top: 80px;
-}
-
 #main h1 {
   margin: 0;
-  font-size: 56px;
+  font-size: 45px;
   font-weight: 700;
-  line-height: 72px; 
+  line-height: 72px;
   font-family: "Poppins", sans-serif;
+  color: #64AE24;
 }
 
 #main h2 {
-  color: #5e5e5e;
+  color: #533A20;
   margin: 10px 0 0 0;
   font-size: 22px;
 }
@@ -484,22 +485,20 @@ h1, h2, h3, h4, h5, h6 {
   color: #f1e7c9;
 }
 
-@media (min-width: 1024px) {
+@media (max-width: 468px) {
   #main {
-    background-attachment: fixed;
+   margin-top: 100px;
   }
 }
 
-@media (max-height: 800px) {
-  #main {
-    height: auto;
-  }
+@media (min-width: 768px)
+#main .first-column {
+    padding-top: 6rem!important;
 }
+
+
 
 @media (max-width: 992px) {
-  #main {
-    height: auto;
-  }
   #main h1 {
     font-size: 28px;
     line-height: 36px;
@@ -508,13 +507,50 @@ h1, h2, h3, h4, h5, h6 {
     font-size: 18px;
     line-height: 24px;
   }
+  #main .second-column {
+    padding-top: 40px;
+}
+}
+
+@media (min-width: 1024px) {
+  #main {
+    background-attachment: fixed;
+  }
+  #main h1 {
+    font-size: 40px;
+    line-height: 40px;
+  }
+  #main h2 {
+    font-size: 18px;
+  }
+
+  #main .first-column {
+      padding-top: 30px;
+  }
+}
+
+@media (min-width: 1200px) {
+  #main {
+    background-attachment: fixed;
+  }
+  #main .container {
+    padding-top: 80px;
+}
+  #main h1 {
+    font-size: 45px;
+    line-height: 50px;
+  }
+  #main h2 {
+    font-size: 22px;
+    margin: 30px 0 0 0;
+  }
 }
 
 /*--------------------------------------------------------------
 # Sections General
 --------------------------------------------------------------*/
 section {
-  padding: 80px 0;
+  padding: 50px 0;
   overflow: hidden;
 }
 
@@ -525,20 +561,33 @@ section {
   background-color: #f1e7c9;
 }
 
-
-
 .section-title {
   text-align: center;
-  padding-bottom: 30px;
+  padding-bottom: 40px;
 }
 
 .section-title h2 {
-  font-size: 32px;
+  font-size: 36px;
   font-weight: bold;
   text-transform: uppercase;
   margin-bottom: 20px;
-  padding-bottom: 0; 
+  color: #64AE24;
+  padding-bottom: 0;
+  font-family: "Alfa Slab One", serif;
 }
+
+.section-title h2::after {
+    content: '';
+    position: absolute;
+    display: block;
+    width: 50px;
+    height: 3px;
+    background: #64AE24;
+    top: 50px;
+    left: calc(50% - 25px);
+}
+
+
 
 .section-title p {
   margin-bottom: 0;
@@ -578,7 +627,7 @@ section {
 }
 
 .about .content p:last-child {
-  margin-bottom: 0;
+  margin-bottom: 10px;
 }
 
 .about .content .btn-learn-more {
@@ -621,7 +670,7 @@ section {
   line-height: 48px;
   display: block;
   font-weight: 700;
-  color: #533a20  ;
+  color: #64AE24;
   margin-left: 80px;
   margin: auto;
 }
@@ -634,16 +683,22 @@ section {
   color: #533a20;
 }
 
+.counts .fas {
+    padding: 18px;
+    font-size: 40px;
+    color: #64AE24;
+}
+
 /*--------------------------------------------------------------
 # Portfolio
 --------------------------------------------------------------*/
-.portfolio .row>* { 
-    padding-right: calc(var(--bs-gutter-x)/ 6); 
-    padding-left: calc(var(--bs-gutter-x)/ 6);  
+.portfolio .row>* {
+    padding-right: calc(var(--bs-gutter-x)/ 6);
+    padding-left: calc(var(--bs-gutter-x)/ 6);
 }
 .portfolio .portfolio-item {
-  margin-top: calc(var(--bs-gutter-x)/ 6);  
-   margin-bottom: calc(var(--bs-gutter-x)/ 6);  
+  margin-top: calc(var(--bs-gutter-x)/ 6);
+   margin-bottom: calc(var(--bs-gutter-x)/ 6);
 }
 
 .portfolio .portfolio-item-title {
@@ -668,13 +723,14 @@ section {
   font-weight: 600;
   line-height: 1;
   text-transform: uppercase;
-  color: #444444;
+  color: #64AE24;
   margin-bottom: 5px;
   transition: all 0.3s ease-in-out;
+  border-radius: 4px;
 }
 
-.portfolio #portfolio-flters li:hover, .portfolio #portfolio-flters li.filter-active {
-  font-weight: 800;
+.portfolio #portfolio-flters .filter-active {
+  color: #533A20;
 }
 
 .portfolio #portfolio-flters li:last-child {
@@ -687,6 +743,7 @@ section {
   overflow: hidden;
   z-index: 1;
 }
+
 
 .portfolio .portfolio-wrap::before {
   content: "";
@@ -804,9 +861,16 @@ section {
   }
 }
 
+@media (min-width: 1400px) {
+  .portfolio .container {
+    max-width: 970px;
+  }
+}
+
 /*--------------------------------------------------------------
 # Frequently Asked Questions
 --------------------------------------------------------------*/
+
 .faq .faq-list {
   padding: 0 100px;
 }
@@ -862,7 +926,7 @@ section {
   display: none;
 }
 
-  
+
 .faq .faq-list a.collapsed .icon-show {
   display: inline-block;
 }
@@ -876,7 +940,7 @@ section {
     padding: 0;
   }
 }
-  
+
 /*--------------------------------------------------------------
 # Footer
 --------------------------------------------------------------*/
@@ -1032,4 +1096,37 @@ section {
   background: #533a20;
   color: #fff;
   text-decoration: none;
+}
+
+/*--------------------------------------------------------------
+# Locations
+--------------------------------------------------------------*/
+
+.btn-outline-success {
+    color: #fff;
+    background-color: #64AE24;
+    margin: 1px;
+}
+
+.btn-outline-success:hover {
+    color: #fff;
+    background-color: #533a20;
+}
+
+.card {
+  border: 0;
+  margin-top: 20px;
+  padding-top: 20px;
+}
+
+.card img {
+  width: 200px;
+  height: 300px;
+}
+
+@media (min-width: 688px) {
+  .card {
+    flex-direction: row;
+    padding: unset;
+  }
 }
