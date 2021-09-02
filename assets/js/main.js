@@ -204,19 +204,10 @@
   });
   
   /**
-  * heatmap.me
+  * heap tracking
   */
-  
-  (function(h,e,a,t,m,p) {
-    m=e.createElement(a);
-    m.async=!0;
-    m.src=t;
-    p=e.getElementsByTagName(a)[0];
-    p.parentNode.insertBefore(m,p);
-  })(
-    window,document,'script','https://u.heatmap.it/log.js'
-  );
-
+  window.heap=window.heap||[],heap.load=function(e,t){window.heap.appid=e,window.heap.config=t=t||{};var r=document.createElement("script");r.type="text/javascript",r.async=!0,r.src="https://cdn.heapanalytics.com/js/heap-"+e+".js";var a=document.getElementsByTagName("script")[0];a.parentNode.insertBefore(r,a);for(var n=function(e){return function(){heap.push([e].concat(Array.prototype.slice.call(arguments,0)))}},p=["addEventProperties","addUserProperties","clearEventProperties","identify","resetIdentity","removeEventProperty","setEventProperties","track","unsetEventProperty"],o=0;o<p.length;o++)heap[p[o]]=n(p[o])};
+  heap.load("742209838");
 
   /**
    * Animation on scroll
