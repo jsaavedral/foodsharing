@@ -1,6 +1,5 @@
 <!DOCTYPE html>
-<html lang="et">
-   <head>
+<html lang="et"><head>
       <meta charset="utf-8">
       <meta content="width=device-width, initial-scale=1.0" name="viewport">
       <title>Foodsharing Tartu</title>
@@ -9,35 +8,32 @@
       <!-- Favicons -->
       <link href="assets/img/favicon.ico" rel="icon">
       <!-- Google Fonts -->
-      <link
-         href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
-         rel="stylesheet">
+      <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
       <link href="assets/vendor/fontawesome/css/all.min.css" rel="stylesheet">
       <!-- Vendor CSS Files -->
       <link href="assets/vendor/aos/aos.css" rel="stylesheet">
       <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
       <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
       <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+      <link href="assets/vendor/swiper/css/glightbox.min.css" rel="stylesheet">
       <!-- Template Main CSS File -->
       <link href="assets/css/style.css" rel="stylesheet">
    </head>
-   <body>
-      <header id="header" class="fixed-top">
+   <body data-aos-easing="ease-in-out" data-aos-duration="1000" data-aos-delay="0">
+      <header id="header" class="fixed-top header-scrolled">
          <div class="container d-flex align-items-center justify-content-between">
             <a href="index.html" class="logo">
-               <img src="assets/img/logo.png" alt="Tartu Toidujagamine logo" class="img-fluid"></a
-               <span class="fas fa-envelope text-center"></span><span class="nav-contact-info text-center">tartutoidujagamine|a}protonmail.com</span>
+               <img src="assets/img/logo.png" alt="Tartu Toidujagamine logo" class="img-fluid"></a><span class="nav-contact-info text-center">tartutoidujagamine|a}protonmail.com</span>
                <nav id="navbar" class="navbar">
                   <ul>
                      <li>
-            <a class="nav-link scrollto active" href="#main">Avaleht</a></li>
+            <a class="nav-link scrollto" href="#main">Avaleht</a></li>
             <li><a class="nav-link scrollto" href="#about">Meist</a></li>
             <li><a class="nav-link scrollto" href="#locations">Asukoht</a></li>
-            <li><a class="nav-link scrollto" href="#gallery">Galerii</a></li>
+            <li><a class="nav-link scrollto active" href="#gallery">Galerii</a></li>
             <li><a class="nav-link scrollto" href="#volunteer">Vabatahtlik töö</a></li>
             <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
-               aria-expanded="false">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
             EST
             </a>
             <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
@@ -58,6 +54,10 @@
                   <h1>Toidupäästmisliikumise Tartu haru</h1>
                   <h2>Toidujagamine õhutab inimesi jagama ülejäänud toitu, mis muidu läheks prügikasti. Päästame-jagame toitu!
                   </h2>
+                  <div class="fs-button">
+                    <a href="/#about" class="btn btn-outline-success btn-md">Meist</a>
+                    <a href="/#locations" class="btn btn-outline-success btn-md">Asukohad</a>
+                  </div>
                </div>
                <div class="col-md-6 col-xl-6 text-center second-column">
                   <img src="assets/img/bg.svg" class="img-fluid">
@@ -67,7 +67,7 @@
       </section>
       <main id="pages">
          <section id="about" class="about section-bg">
-            <div class="container" data-aos="fade-up">
+            <div class="container aos-init aos-animate" data-aos="fade-up">
                <div class="section-title">
                   <h2>Meist</h2>
                </div>
@@ -104,13 +104,11 @@
             </div>
          </section>
          <section id="faq" class="faq section-bg-alt">
-            <div class="container" data-aos="fade-up">
+            <div class="container aos-init aos-animate" data-aos="fade-up">
                <div class="faq-list">
                   <ul>
-                     <li data-aos="fade-up">
-                        <i class="bi bi-question-circle icon-help" width="24" height="24"></i> <a data-bs-toggle="collapse" class="collapse"
-                           data-bs-target="#faq-list-1">Mis on Tartu Toidujagamine (TT)? <i
-                           class="bi bi-chevron-down icon-show"></i><i class="bi bi-chevron-up icon-close"></i></a>
+                     <li data-aos="fade-up" class="aos-init aos-animate">
+                        <i class="bi bi-question-circle icon-help" width="24" height="24"></i> <a data-bs-toggle="collapse" class="collapse" data-bs-target="#faq-list-1">Mis on Tartu Toidujagamine (TT)? <i class="bi bi-chevron-down icon-show"></i><i class="bi bi-chevron-up icon-close"></i></a>
                         <div id="faq-list-1" class="collapse show" data-bs-parent=".faq-list">
                            <p>
                               Tartu Toidujagamine on liikumine, mis päästab ja jagab järele jäänud toitu Tartus. Tartu Toidujagamine teeb koostööd
@@ -119,21 +117,17 @@
                            </p>
                         </div>
                      </li>
-                     <li data-aos="fade-up" data-aos-delay="230">
-                        <i class="bi bi-question-circle icon-help"></i> <a data-bs-toggle="collapse" data-bs-target="#faq-list-2"
-                           class="collapsed">Kust meie idee pärineb? <i class="bi bi-chevron-down icon-show"></i><i
-                           class="bi bi-chevron-up icon-close"></i></a>
+                     <li data-aos="fade-up" data-aos-delay="230" class="aos-init aos-animate">
+                        <i class="bi bi-question-circle icon-help"></i> <a data-bs-toggle="collapse" data-bs-target="#faq-list-2" class="collapsed">Kust meie idee pärineb? <i class="bi bi-chevron-down icon-show"></i><i class="bi bi-chevron-up icon-close"></i></a>
                         <div id="faq-list-2" class="collapse" data-bs-parent=".faq-list">
                            <p>
                               Idee pärineb Saksamaalt, kus on suur toidupäästmispunktide võrgustik, mida haldavad ja arendavad
                               tuhanded vabatahtlikud. Sellise võrgustiku arendamine on võimalik vaid tänu aktiivsetele inimestele ja
                               toidujäätmete tekkimise vastastele seadustele.
-                        </div>
+                        </p></div>
                      </li>
-                     <li data-aos="fade-up" data-aos-delay="200">
-                        <i class="bi bi-question-circle icon-help"></i> <a data-bs-toggle="collapse" data-bs-target="#faq-list-3"
-                           class="collapsed">Millega me tegeleme? <i class="bi bi-chevron-down icon-show"></i><i
-                           class="bi bi-chevron-up icon-close"></i></a>
+                     <li data-aos="fade-up" data-aos-delay="200" class="aos-init aos-animate">
+                        <i class="bi bi-question-circle icon-help"></i> <a data-bs-toggle="collapse" data-bs-target="#faq-list-3" class="collapsed">Millega me tegeleme? <i class="bi bi-chevron-down icon-show"></i><i class="bi bi-chevron-up icon-close"></i></a>
                         <div id="faq-list-3" class="collapse" data-bs-parent=".faq-list">
                            <p>
                               Aitame üle jäävat toitu laiali jagada;
@@ -152,10 +146,8 @@
                            </p>
                         </div>
                      </li>
-                     <li data-aos="fade-up" data-aos-delay="300">
-                        <i class="bi bi-question-circle icon-help"></i> <a data-bs-toggle="collapse" data-bs-target="#faq-list-4"
-                           class="collapsed">Kes tegelevad? <i class="bi bi-chevron-down icon-show"></i><i
-                           class="bi bi-chevron-up icon-close"></i></a>
+                     <li data-aos="fade-up" data-aos-delay="300" class="aos-init aos-animate">
+                        <i class="bi bi-question-circle icon-help"></i> <a data-bs-toggle="collapse" data-bs-target="#faq-list-4" class="collapsed">Kes tegelevad? <i class="bi bi-chevron-down icon-show"></i><i class="bi bi-chevron-up icon-close"></i></a>
                         <div id="faq-list-4" class="collapse" data-bs-parent=".faq-list">
                            <p>
                               Tartu Toidujagamine funktsioneerib ainult tänu vabatahtlikule tööle ning inimestele, kes annetavad
@@ -173,148 +165,40 @@
                   <div class="col-lg-2 col-md-5 col-6 d-md-flex align-items-md-stretch">
                      <div class="count-box">
                         <i class="fas fa-retweet"></i>
-                        <span data-purecounter-start="0" data-purecounter-end="4" data-purecounter-duration="2"
-                           class="purecounter"></span>
+                        <span data-purecounter-start="0" data-purecounter-end="4" data-purecounter-duration="0" class="purecounter">4</span>
                         <p>toidujagamispunkti</p>
                      </div>
                   </div>
                   <div class="col-lg-2 col-md-5 col-6 d-md-flex align-items-md-stretch">
                      <div class="count-box">
                         <i class="fas fa-handshake"></i>
-                        <span data-purecounter-start="0" data-purecounter-end="7" data-purecounter-duration="2"
-                           class="purecounter"></span>
+                        <span data-purecounter-start="0" data-purecounter-end="7" data-purecounter-duration="0" class="purecounter">7</span>
                         <p>koostööpartnerit</p>
                      </div>
                   </div>
                   <div class="col-lg-2 col-md-5 col-6 d-md-flex align-items-md-stretch">
                      <div class="count-box">
                         <i class="fas fa-user-ninja"></i>
-                        <span data-purecounter-start="0" data-purecounter-end="20" data-purecounter-duration="2"
-                           class="purecounter"></span>
+                        <span data-purecounter-start="0" data-purecounter-end="20" data-purecounter-duration="0" class="purecounter">20</span>
                         <p>vabatahtlikku</p>
                      </div>
                   </div>
                   <div class="col-lg-2 col-md-5 col-6 d-md-flex align-items-md-stretch">
                      <div class="count-box">
                         <i class="fas fa-apple-alt"></i>
-                        <span data-purecounter-start="0" data-purecounter-end="5000" data-purecounter-duration="2"
-                           class="purecounter">+</span>
+                        <span data-purecounter-start="0" data-purecounter-end="5000" data-purecounter-duration="0" class="purecounter">5000</span>
                         <p>kilogrammi päästetud toitu</p>
                      </div>
                   </div>
                </div>
             </div>
          </section>
-         <section id="gallery" class="portfolio section-bg-alt">
-            <div class="container text-center" data-aos="fade-up">
-               <div class="section-title">
-                  <h2>Galerii</h2>
-                  <p>Päästetud toit</p>
-               </div>
-               <div class="row" data-aos="fade-up" data-aos-delay="300">
-                  <div class="col-lg-3 col-md-6 portfolio-item">
-                     <div class="portfolio-wrap">
-                        <img src="assets/img/portfolio/thumbnails/paastetud-toit_thumb.jpg"
-                           alt="Päästetud toit valmis toidukappi viimiseks"
-                           class="img-fluid">
-                        <div class="portfolio-info">
-                           <div class="portfolio-links">
-                              <a href="assets/img/portfolio/paastetud_toit.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox"
-                                 title="Päästetud toit"><i class="bi bi-plus"></i></a>
-                           </div>
-                        </div>
-                     </div>
-                  </div>
-                  <div class="col-lg-3 col-md-6 portfolio-item filter-web">
-                     <div class="portfolio-wrap">
-                        <img src="assets/img/portfolio/thumbnails/barlova-toit_thumb.jpg"
-                           alt="Päästetud toit Barlovas toidukapis"
-                           class="img-fluid">
-                        <div class="portfolio-info">
-                           <div class="portfolio-links">
-                              <a href="assets/img/portfolio/barlova-toit.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox"
-                                 title="Päästetud toit Barlova toidujagamiskapis"><i class="bi bi-plus"></i></a>
-                           </div>
-                        </div>
-                     </div>
-                  </div>
-                  <div class="col-lg-3 col-md-6 portfolio-item filter-app">
-                     <div class="portfolio-wrap">
-                        <img src="assets/img/portfolio/thumbnails/paastetud_toit_kappi_thumb.jpg"
-                           alt="Päästetud toit on kottides ja viiakse toidukappi"
-                           class="img-fluid">
-                        <div class="portfolio-info">
-                           <div class="portfolio-links">
-                              <a href="assets/img/portfolio/paastetud_toit_kappi.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox"
-                                 title="Päästetud toit, mis jaotatakse Tartu toidujagamiskappidesse"><i class="bi bi-plus"></i></a>
-                           </div>
-                        </div>
-                     </div>
-                  </div>
-                  <div class="col-lg-3 col-md-6 portfolio-item filter-card">
-                     <div class="portfolio-wrap">
-                        <img src="assets/img/portfolio/thumbnails/gen-toit_thumb.jpg" class="img-fluid" alt="Toit toodud Genialistide toidujagamispunkti">
-                        <div class="portfolio-info">
-                           <div class="portfolio-links">
-                              <a href="assets/img/portfolio/gen-toit.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox"
-                                 title="Päästetud toit Genialistide toidujagamiskapis"><i class="bi bi-plus"></i></a>
-                           </div>
-                        </div>
-                     </div>
-                  </div>
-                  <div class="col-lg-3 col-md-6 portfolio-item filter-card">
-                     <div class="portfoli o-wrap">
-                        <img src="assets/img/portfolio/thumbnails/paastetud_toit_vegan_thumb.jpg" class="img-fluid" alt="Päästetud toit kottides erinevate juurviljade köögiviljade ja puuviljadega">
-                        <div class="portfolio-info">
-                           <div class="portfolio-links">
-                              <a href="assets/img/portfolio/paastetud_toit_vegan.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox"
-                                 title="Kõige enam päästame köögi-ja juurvilju"><i class="bi bi-plus"></i></a>
-                           </div>
-                        </div>
-                     </div>
-                  </div>
-                  <div class="col-lg-3 col-md-6 portfolio-item filter-app">
-                     <div class="portfolio-wrap">
-                        <img src="assets/img/portfolio/thumbnails/riknev_thumb.jpg" class="img-fluid" alt="Aparaaditehase toidujagamispunkti kergestiriknev toit">
-                        <div class="portfolio-info">
-                           <div class="portfolio-links">
-                              <a href="assets/img/portfolio/riknev.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox"
-                                 title="Kergestiriknev toit"><i class="bi bi-plus"></i></a>
-                           </div>
-                        </div>
-                     </div>
-                  </div>
-                  <div class="col-lg-3 col-md-6 portfolio-item filter-app">
-                     <div class="portfolio-wrap">
-                        <img src="assets/img/portfolio/thumbnails/aparaat_thumb.jpg" class="img-fluid" alt="Aparaaditehase toidukapp">
-                        <div class="portfolio-info">
-                           <div class="portfolio-links">
-                              <a href="assets/img/portfolio/aparaat.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox"
-                                 title="Päästetud toit Aparaaditehase toidukapis"><i class="bi bi-plus"></i></a>
-                           </div>
-                        </div>
-                     </div>
-                  </div>
-                  <div class="col-lg-3 col-md-6 portfolio-item filter-card">
-                     <div class="portfolio-wrap">
-                        <img src="assets/img/portfolio/thumbnails/foodsharingtartu_kitchen_thumb.jpg" class="img-fluid" alt="Tartu Toiudujagamne päästab toitu koolisööklast">
-                        <div class="portfolio-info">
-                           <div class="portfolio-links">
-                              <a href="assets/img/portfolio/foodsharingtartu_kitchen.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox"
-                                 title="Koolist päästetud toit"><i class="bi bi-plus"></i></a>
-                           </div>
-                        </div>
-                     </div>
-                  </div>
-               </div>
-            </div>
-         </section>
-         <section id="locations" class="portfolio section-bg">
-            <div class="container" data-aos="fade-up">
+         <section id="locations" class="portfolio section-bg-alt">
+            <div class="container aos-init aos-animate" data-aos="fade-up">
                <div class="section-title">
                   <h2>Asukohad</h2>
                </div>
-               <div class="row" data-aos="fade-up" data-aos-delay="150">
+               <div class="row aos-init aos-animate" data-aos="fade-up" data-aos-delay="150">
                   <div class="col-lg-12 md-12 d-flex justify-content-center">
                      <ul id="portfolio-flters">
                         <li data-filter="*" class="filter-active">Kõik</li>
@@ -325,9 +209,9 @@
                      </ul>
                   </div>
                </div>
-               <div class="portfolio-container" data-aos="fade-up" data-aos-delay="300">
+               <div class="portfolio-container aos-init aos-animate" data-aos="fade-up" data-aos-delay="300" style="position: relative; height: 2534.4px;">
                   <div class="row">
-                     <div class="col-lg-6 mb-6 filter-card filter-bar">
+                     <div class="col-lg-6 mb-6 filter-card filter-bar" style="position: absolute; left: 0px; top: 0px;">
                         <div class="card">
                            <img src="assets/img/portfolio/thumbnails/barlova-tpj.jpg" alt="Barlova toidujagamispunkt" class="card-img-top mx-auto d-block">
                            <div class="card-body">
@@ -341,7 +225,7 @@
                            </div>
                         </div>
                      </div>
-                     <div class="col-lg-6 mb-6 filter-card filter-gen">
+                     <div class="col-lg-6 mb-6 filter-card filter-gen" style="position: absolute; left: 0px; top: 597.6px;">
                         <div class="card">
                            <img src="assets/img/portfolio/thumbnails/genialistide-tpj.jpg" alt="Genialistide toidujagamispunkt" class="card-img-top mx-auto d-block">
                            <div class="card-body">
@@ -357,7 +241,7 @@
                      </div>
                   </div>
                   <div class="row">
-                     <div class="col-lg-6 mb-6 filter-card filter-apa">
+                     <div class="col-lg-6 mb-6 filter-card filter-apa" style="position: absolute; left: 0px; top: 1243.2px;">
                         <div class="card">
                            <img src="assets/img/portfolio/thumbnails/aparaaditehas-tpj.jpg" alt="Aparaaditehase toidujagamispunkt" class="card-img-top mx-auto d-block">
                            <div class="card-body">
@@ -371,7 +255,7 @@
                            </div>
                         </div>
                      </div>
-                     <div class="col-lg-6 mb-6 filter-card filter-temp">
+                     <div class="col-lg-6 mb-6 filter-card filter-temp" style="position: absolute; left: 0px; top: 1912.8px;">
                         <div class="card">
                            <img src="assets/img/portfolio/thumbnails/turg-tpj.jpg" alt="Ajutine Toidujagamispunkt" class="card-img-top mx-auto d-block">
                            <div class="card-body">
@@ -379,7 +263,7 @@
                               <p class="card-text">Turuhoone punkt on avatud turuhoone peahoone ees aadressil Vabaduse puiestee 1. Punktis on külmkapp.</p>
                               <div class="card-links">
                                  <p><strong>Vaata kaardilt:</strong></p>
-                                 <a href="https://goo.gl/maps/nZcHk6Gy3KMXoRSA8" target="_blank"  class="btn btn-outline-success btn-sm">Google Maps</a>
+                                 <a href="https://goo.gl/maps/nZcHk6Gy3KMXoRSA8" target="_blank" class="btn btn-outline-success btn-sm">Google Maps</a>
                                  <a href="https://www.openstreetmap.org/note/2828471" target="_blank" class="btn btn-outline-success btn-sm">Open Street Map</a>
                               </div>
                            </div>
@@ -388,17 +272,108 @@
                   </div>
                </div>
             </div>
-            </div>
+
+
+         </section>
+         <section id="gallery" class="portfolio section-bg">
+            <div class="container text-center aos-init aos-animate" data-aos="fade-up">
+               <div class="section-title">
+                  <h2>Galerii</h2>
+                  <p>Päästetud toit</p>
+               </div>
+               <div class="row aos-init aos-animate" data-aos="fade-up" data-aos-delay="300">
+                  <div class="col-lg-3 col-md-6 portfolio-item">
+                     <div class="portfolio-wrap">
+                        <img src="assets/img/portfolio/thumbnails/fs-vabatahtlikud.jpg" alt="Tartu Toidujagmise vabatahtlikud aitavad avada uut turuhoone kappi" class="img-fluid">
+                        <div class="portfolio-info">
+                           <div class="portfolio-links">
+                              <a href="assets/img/portfolio/fs-vabatahtlikud.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Tartu Toidujagamise vabatahtlikud"><i class="bi bi-plus"></i></a>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="col-lg-3 col-md-6 portfolio-item filter-web">
+                     <div class="portfolio-wrap">
+                        <img src="assets/img/portfolio/thumbnails/fs-viljad.jpg" alt="Meie vabatahtlik jagamas toitu Turuhoone kapi avamise puhul" class="img-fluid">
+                        <div class="portfolio-info">
+                           <div class="portfolio-links">
+                              <a href="assets/img/portfolio/fs-viljad.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Meie vabatahtlik jagab toitu Turuhoone kapi avamise üritusel"><i class="bi bi-plus"></i></a>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="col-lg-3 col-md-6 portfolio-item filter-app">
+                     <div class="portfolio-wrap">
+                        <img src="assets/img/portfolio/thumbnails/fs-toit-koigile.jpg" alt="Turuhoone kapi avamisel hjenesid kapid kiiresti" class="img-fluid">
+                        <div class="portfolio-info">
+                           <div class="portfolio-links">
+                              <a href="assets/img/portfolio/fs-toit-koigile.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Turuhoone kapi avamisel oli kapp väga populaarne"><i class="bi bi-plus"></i></a>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="col-lg-3 col-md-6 portfolio-item filter-card">
+                     <div class="portfolio-wrap">
+                        <img src="assets/img/portfolio/thumbnails/fs-toidukapp.jpg" class="img-fluid" alt="Kõige enam on meil toidujagamiskappides köögivilju ">
+                        <div class="portfolio-info">
+                           <div class="portfolio-links">
+                              <a href="assets/img/portfolio/fs-toidukapp.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Toidukappidest leiad kõige enam köögivilju. Samuti ka valmistoitu"><i class="bi bi-plus"></i></a>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="col-lg-3 col-md-6 portfolio-item filter-card">
+                     <div class="portfolio-wrap change igthub">
+                        <img src="assets/img/portfolio/thumbnails/fs-vota-toitu.jpg" class="img-fluid" alt="Iga üks võib toidujagamiskappidest võtta toitu">
+                        <div class="portfolio-info">
+                           <div class="portfolio-links">
+                              <a href="assets/img/portfolio/fs-vota-toitu.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Ärge häbenege! Kõik võivad vtta toitu toidujagamiskappidest"><i class="bi bi-plus"></i></a>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="col-lg-3 col-md-6 portfolio-item filter-app">
+                     <div class="portfolio-wrap">
+                        <img src="assets/img/portfolio/thumbnails/fs-kupsised.jpg" class="img-fluid" alt="Meie vabatahtlik jagamas küpsiseid Turuhoone kapi avamise puhul">
+                        <div class="portfolio-info">
+                           <div class="portfolio-links">
+                              <a href="assets/img/portfolio/fs-kupsised.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Meie vabatahtlik jagamas Turuhoone üritusel küpsiseid"><i class="bi bi-plus"></i></a>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="col-lg-3 col-md-6 portfolio-item filter-card">
+                     <div class="portfolio-wrap">
+                        <img src="assets/img/portfolio/thumbnails/fs-kyllus.jpg" class="img-fluid" alt="Kommid prügikonteineris">
+                        <div class="portfolio-info">
+                           <div class="portfolio-links">
+                              <a href="assets/img/portfolio/fs-kyllus.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Kommid prügikonteineris, ühe Eesti poe ülejääk"><i class="bi bi-plus"></i></a>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="col-lg-3 col-md-6 portfolio-item filter-card">
+                     <div class="portfolio-wrap">
+                        <img src="assets/img/portfolio/thumbnails/foodsharingtartu_kitchen_thumb.jpg" class="img-fluid" alt="Tartu Toiudujagamne päästab toitu koolisööklast">
+                        <div class="portfolio-info">
+                           <div class="portfolio-links">
+                              <a href="assets/img/portfolio/foodsharingtartu_kitchen.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Koolist päästetud toit"><i class="bi bi-plus"></i></a>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
             </div>
          </section>
          <section id="volunteer" class="section-bg-alt">
             <div class="container">
                <div class="row text-center">
                   <div class="col">
-                     <h2 class="section-title">
-                     Tule vabatahtlikuks! </h1>
+                     <div class="section-title">
+                       <h2>Tule vabatahtlikuks!</h2>
+                     </div>
                      <span class="lead d-block">Aita päästa rohkem toitu, korrasta kappe, tegele infotööga, otsi uusi koostööpartnereid ...</span>
-                     <span class="lead d-block"> Kui soovid saada meie vabatahtlikuks, saada palun e-mail aadressile tartutoidujagamine{a]protonmail.com</span>
+                     <span class="lead d-block">Kui soovid saada meie  vabatahtlikuks, saada palun e-mail aadressile tartutoidujagamine{a]protonmail.com</span>
                   </div>
                </div>
             </div>
@@ -418,17 +393,16 @@
             </div>
          </div>
       </footer>
-      <div id="preloader"></div>
-      <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i
-         class="bi bi-arrow-up-short"></i></a>
+
+      <a href="#" class="back-to-top d-flex align-items-center justify-content-center active"><i class="bi bi-arrow-up-short"></i></a>
       <!-- Vendor JS Files -->
       <script src="assets/vendor/aos/aos.js"></script>
       <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
       <script src="assets/vendor/bootstrap/js/bootstrap.min.js"></script>
       <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+      <script src="assets/vendor/swiper/src/swiper.min.js"></script>
       <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
       <script src="assets/vendor/purecounter/purecounter.js"></script>
       <!-- Template Main JS File -->
       <script src="assets/js/main.js"></script>
-   </body>
-</html>
+</body></html>
