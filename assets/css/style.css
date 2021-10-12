@@ -28,10 +28,13 @@ a:hover {
    src: url(AlfaSlabOne-Regular.ttf);
 }
 
-h1, h2, h3, h4, h5, h6, a {
+h1, h2, h3, h4, h5, h6 {
   font-family: AlfaSlab;
 }
 
+.btn {
+  font-weight: 700;
+}
 
 /*--------------------------------------------------------------
 # Back to top button
@@ -191,6 +194,7 @@ h1, h2, h3, h4, h5, h6, a {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  font-family: AlfaSlab;
   padding: 10px 0 10px 30px;
   font-size: 14px;
   color: #533a20;
@@ -340,10 +344,11 @@ h1, h2, h3, h4, h5, h6, a {
 }
 
 .navbar-mobile a {
+  font-family: AlfaSlab;
   font-size: 20px;
-  font-weight: 900;
+  font-weight: 500;
   color: #64AE24;
-     padding: 10px 20px;
+  padding: 10px 20px;
 }
 
 .navbar-mobile a:hover, .navbar-mobile .active, .navbar-mobile li:hover > a {
