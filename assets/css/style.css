@@ -14,8 +14,8 @@ body {
 }
 
 a {
-  color: #64AE24;
   text-decoration: none;
+  color: #64AE24;
 }
 
 a:hover {
@@ -23,8 +23,13 @@ a:hover {
   text-decoration: none;
 }
 
-h1, h2, h3, h4, h5, h6 {
-  font-family: "Raleway", sans-serif;
+@font-face {
+   font-family: AlfaSlab;
+   src: url(AlfaSlabOne-Regular.ttf);
+}
+
+h1, h2, h3, h4, h5, h6, a {
+  font-family: AlfaSlab;
 }
 
 
@@ -485,6 +490,14 @@ h1, h2, h3, h4, h5, h6 {
   color: #f1e7c9;
 }
 
+#main .fs-button {
+  margin: 30px 0 0 0;
+}
+
+#main .fs-button .btn.btn-outline-success {
+    text-transform: uppercase;
+}
+
 @media (max-width: 468px) {
   #main {
    margin-top: 100px;
@@ -568,12 +581,12 @@ section {
 
 .section-title h2 {
   font-size: 36px;
-  font-weight: bold;
+  font-weight: 500;
   text-transform: uppercase;
   margin-bottom: 20px;
   color: #64AE24;
   padding-bottom: 0;
-  font-family: "Alfa Slab One", serif;
+  font-family: AlfaSlab;
 }
 
 .section-title h2::after {
@@ -666,8 +679,9 @@ section {
 }
 
 .counts .count-box span {
-  font-size: 48px;
+  font-size: 45px;
   line-height: 48px;
+  font-family: AlfaSlab;
   display: block;
   font-weight: 700;
   color: #64AE24;
@@ -677,8 +691,7 @@ section {
 
 .counts .count-box p {
   padding: 8px 0 0 0;
-  font-family: "Raleway", sans-serif;
-  font-weight: 600;
+  font-family: AlfaSlab;
   font-size: 14px;
   color: #533a20;
 }
@@ -720,7 +733,7 @@ section {
   display: inline-block;
   padding: 10px 15px 8px 15px;
   font-size: 14px;
-  font-weight: 600;
+  font-family: AlfaSlab;
   line-height: 1;
   text-transform: uppercase;
   color: #64AE24;
@@ -894,10 +907,9 @@ section {
 .faq .faq-list a {
   display: block;
   position: relative;
-  font-family: "Poppins", sans-serif;
+  font-family: AlfaSlab;
   font-size: 16px;
   line-height: 24px;
-  font-weight: 500;
   padding: 0 30px;
   outline: none;
   color: #533a20;
@@ -1114,6 +1126,7 @@ section {
 }
 
 .card {
+  background: none;
   border: 0;
   margin-top: 20px;
   padding-top: 20px;
@@ -1129,4 +1142,13 @@ section {
     flex-direction: row;
     padding: unset;
   }
+}
+
+
+/*--------------------------------------------------------------
+# Volunteer
+--------------------------------------------------------------*/
+
+#volunteer .text-center .lead {
+  font-family: AlfaSlab;
 }
