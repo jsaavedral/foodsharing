@@ -408,6 +408,10 @@ h1, h2, h3, h4, h5, h6, a {
   height: 100vh;
 }
 
+#main-page .btn-outline-success {
+    width: 100%;
+}
+
 #main:before {
   content: "";
   position: absolute;
@@ -621,7 +625,7 @@ section {
 /*--------------------------------------------------------------
 # About
 --------------------------------------------------------------*/
-.about .content h3 {
+#about .content h3 {
   font-weight: 600;
   font-size: 26px;
 }
