@@ -32,6 +32,11 @@ h1, h2, h3, h4, h5, h6, a {
   font-family: AlfaSlab;
 }
 
+h3 {
+    font-size: 1.3em;
+    color: #64AE24;
+}
+
 .col-lg-12.inner.text-center {
     margin: 12px;
 }
@@ -404,7 +409,7 @@ h1, h2, h3, h4, h5, h6, a {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  background-image: url("/assets/img/portfolio/7.JPG");
+  background-image: url("/assets/img/portfolio/mainpage.jpg");
   height: 100vh;
 }
 
@@ -1247,7 +1252,14 @@ section {
   text-align: center;
   width: 100%; }
 
-/*# sourceMappingURL=login.css.map */
+/*--------------------------------------------------------------
+# invite us
+--------------------------------------------------------------*/
+@media (max-width: 767px) {
+  .svg {
+      margin: 0 0 20px 0;
+  }
+}
 
 
 /*--------------------------------------------------------------
