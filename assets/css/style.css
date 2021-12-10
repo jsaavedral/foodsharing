@@ -28,12 +28,17 @@ a:hover {
    src: url(AlfaSlabOne-Regular.ttf);
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1, h2, h3, h4, h5, h6, a {
   font-family: AlfaSlab;
 }
 
-.btn {
-  font-weight: 700;
+h3 {
+    font-size: 1.3em;
+    color: #64AE24;
+}
+
+.col-lg-12.inner.text-center {
+    margin: 12px;
 }
 
 /*--------------------------------------------------------------
@@ -194,7 +199,6 @@ h1, h2, h3, h4, h5, h6 {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  font-family: AlfaSlab;
   padding: 10px 0 10px 30px;
   font-size: 14px;
   color: #533a20;
@@ -344,11 +348,10 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .navbar-mobile a {
-  font-family: AlfaSlab;
   font-size: 20px;
-  font-weight: 500;
+  font-weight: 900;
   color: #64AE24;
-  padding: 10px 20px;
+     padding: 10px 20px;
 }
 
 .navbar-mobile a:hover, .navbar-mobile .active, .navbar-mobile li:hover > a {
@@ -395,16 +398,27 @@ h1, h2, h3, h4, h5, h6 {
 # Hero Section
 --------------------------------------------------------------*/
 #main {
-  color: #f1e7c9;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  background-color: #f1e7c9;
   height: 100vh;
+}
+
+#main-page {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url("/assets/img/portfolio/mainpage.jpg");
+  height: 100vh;
+}
+
+#main-page .btn-outline-success {
+    width: 100%;
 }
 
 #main:before {
   content: "";
-  background: #f1e7c9;
   position: absolute;
   bottom: 0;
   top: 0;
@@ -505,7 +519,7 @@ h1, h2, h3, h4, h5, h6 {
 
 @media (max-width: 468px) {
   #main {
-   margin-top: 100px;
+   margin-top: 40px;
   }
 }
 
@@ -616,7 +630,7 @@ section {
 /*--------------------------------------------------------------
 # About
 --------------------------------------------------------------*/
-.about .content h3 {
+#about .content h3 {
   font-weight: 600;
   font-size: 26px;
 }
@@ -1122,7 +1136,7 @@ section {
 .btn-outline-success {
     color: #fff;
     background-color: #64AE24;
-    margin: 1px;
+    margin: 6.3px;
 }
 
 .btn-outline-success:hover {
@@ -1131,7 +1145,7 @@ section {
 }
 
 .card {
-  background-color: #ffffff;
+  background: none;
   border: 0;
   margin-top: 20px;
   padding-top: 20px;
@@ -1146,6 +1160,99 @@ section {
   .card {
     flex-direction: row;
     padding: unset;
+  }
+}
+
+.brand-wrapper {
+  margin-bottom: 19px; }
+  .brand-wrapper .logo {
+    height: 37px; }
+
+    .login-card {
+      border: 0;
+      border-radius: 27.5px;
+      box-shadow: 0 10px 30px 0 rgba(172, 168, 168, 0.43);
+      overflow: hidden;
+      background: transparent;
+      padding: 85px 60px 60px;
+      }
+      .login-card-img {
+        border-radius: 0;
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        -o-object-fit: cover;
+           object-fit: cover; }
+      .login-card .card-body {
+        padding: 85px 60px 60px; }
+        @media (max-width: 422px) {
+          .login-card .card-body {
+            padding: 35px 24px; } }
+      .login-card-description {
+        font-size: 25px;
+        color: #000;
+        font-weight: normal;
+        margin-bottom: 23px; }
+      .login-card form {
+        max-width: 326px; }
+      .login-card .form-control {
+        border: 1px solid #d5dae2;
+        padding: 15px 25px;
+        margin-bottom: 20px;
+        min-height: 45px;
+        font-size: 13px;
+        line-height: 15;
+        font-weight: normal; }
+        .login-card .form-control::-webkit-input-placeholder {
+          color: #919aa3; }
+        .login-card .form-control::-moz-placeholder {
+          color: #919aa3; }
+        .login-card .form-control:-ms-input-placeholder {
+          color: #919aa3; }
+        .login-card .form-control::-ms-input-placeholder {
+          color: #919aa3; }
+        .login-card .form-control::placeholder {
+          color: #919aa3; }
+      .login-card .login-btn {
+        padding: 13px 20px 12px;
+        background-color: #000;
+        border-radius: 4px;
+        font-size: 17px;
+        font-weight: bold;
+        line-height: 20px;
+        color: #fff;
+        margin-bottom: 24px; }
+        .login-card .login-btn:hover {
+          border: 1px solid #000;
+          background-color: transparent;
+          color: #000; }
+      .login-card .forgot-password-link {
+        font-size: 14px;
+        color: #919aa3;
+        margin-bottom: 12px; }
+      .login-card-footer-text {
+        font-size: 16px;
+        color: #0d2366;
+        margin-bottom: 60px; }
+        @media (max-width: 767px) {
+          .login-card-footer-text {
+            margin-bottom: 24px; } }
+      .login-card-footer-nav a {
+        font-size: 14px;
+        color: #919aa3; }
+
+.footer-link {
+  position: absolute;
+  bottom: 1rem;
+  text-align: center;
+  width: 100%; }
+
+/*--------------------------------------------------------------
+# invite us
+--------------------------------------------------------------*/
+@media (max-width: 767px) {
+  .svg {
+      margin: 0 0 20px 0;
   }
 }
 
