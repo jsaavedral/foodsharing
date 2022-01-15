@@ -1250,9 +1250,20 @@ section {
 /*--------------------------------------------------------------
 # invite us
 --------------------------------------------------------------*/
+
+.invite .content {
+    padding: 12px;
+    margin: 12px;
+}
+
 @media (max-width: 767px) {
   .svg {
       margin: 0 0 20px 0;
+  }
+  .invite .col-lg-12 {
+      flex-direction: column !important;
+      padding: unset;
+    }
   }
 }
 
