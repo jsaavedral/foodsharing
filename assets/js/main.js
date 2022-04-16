@@ -1,5 +1,5 @@
 /**
-* Template Name: OnePage - v4.1.0
+* Template Name: Foodsharing Estonia 2.1.0
 * Template URL: https://bootstrapmade.com/onepage-multipurpose-bootstrap-template/
 * Author: BootstrapMade.com
 * License: https://bootstrapmade.com/license/
