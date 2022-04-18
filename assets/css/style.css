@@ -417,6 +417,14 @@ h3 {
     width: 100%;
 }
 
+@media screen and (max-width: 768px) {
+  #main-page .mission {
+    background-color: rgba(249, 245, 224, 1);
+    padding: 10px 0;
+    margin-left: 10px 0;
+  }
+}
+
 
 #main:before {
   content: "";
