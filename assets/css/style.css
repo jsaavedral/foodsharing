@@ -420,7 +420,6 @@ h3 {
 @media screen and (max-width: 768px) {
   #main-page .mission {
     margin-left: 10px 0;
-    background-color: #198754;
   }
   #main-page .mission-text {
     display: none;
